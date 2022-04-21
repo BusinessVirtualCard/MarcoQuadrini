@@ -19,87 +19,63 @@
 }
 
 *{
-	padding: 0;
-	margin:  0;
+  padding: 0;
+  margin:  0;
 }
 
 body{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	background-color:#363f9a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color:black;
 }
 
 img{
-	position: absolute;
-	top: 5%;
-	height: 15vh;
+  position: absolute;
+  top: 5%;
+  height: 15vh;
 }
 
 .cardContainer{
-	position: absolute;
-	top: 30%;
-	height: 25vh;
-	width: 40vh;
+  position: absolute;
+  top: 35%;
+  height: 25vh;
+  width: 40vh;
 }
 
-.card{
-	position: absolute;
-	height: 25vh;
-	width: 40vh;
-	background:  linear-gradient(rgba(255,255,255,0.6), rgba(255,255,255,0));
-	backdrop-filter: blur(10px) saturate(100%) contrast(45%) brightness(130%);
-	border-radius: 50px;
-    border:  solid 2px white;
-}
-
-.card h1{
-	position: absolute;
-	top: 5%;
-	left: 5%;
-	font-family: myFont;
-	font-size: 3vh;
-}
-
-.info{
-	height: 15vh;
-	width: 35vh;
-	position: absolute;
-	top: 25%;
-	left: 5%;
-	display: flex;
-	flex-direction: column;
+video {
+  width: 100%;
 }
 
 p{
-	font-size: 2vh;
-	font-family: myFont2;
-	margin-top: 2%;
+  font-size: 2vh;
+  font-family: myFont2;
+  margin-top: 2%;
 }
 
 
-.container{
-	position: absolute;
-	bottom: 15%;
-	height: 6vh;
-	width: 20vh;
-	border-radius: 30px;
-	background-color: #378048;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	text-decoration: none;
-	border: solid black;
+a{
+  position: absolute;
+  bottom: 15%;
+  height: 6vh;
+  width: 20vh;
+  border-radius: 30px;
+  background-color: #363f9a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  border: solid black;
 }
 
 .save{
-	height: 100%;
-	width: 100%;
-	text-align: center;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	color: white;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
     font-family: Arial;
     font-size: 2vh;
 }
@@ -122,164 +98,3 @@ p{
 
 
 
-
-
-.bubble-holder{
-  width:100%;
-  height: 100vh;
-  position: relative;
-  overflow:hidden;
-}
-
-.bubble-1 {
-  left: 8%;
-  animation-delay: 1s;
-}
-.bubble-1 .bubble-animation-y{
-  animation-duration: 7s;
-  animation-delay: 0s;
-}
-
-.bubble-2 {
-  left: 40%;
-  animation-delay: 2s;
-}
-.bubble-2 .bubble-animation-y{
-  animation-duration: 6s;
-  animation-delay: 2s;
-}
-
-.bubble-3 {
-  right: 15%;
-  animation-delay: 1s;
-}
-.bubble-3 .bubble-animation-y{
-  animation-duration: 5s;
-  animation-delay: 1.5s;
-}
-
-.bubble-4 {
-  left: 8%; 
-  animation-delay: 2s;
-}
-.bubble-4 .bubble-animation-y{
-  animation-duration: 6s;
-  animation-delay: 3s;
-}
-
-.bubble-5 {
-  left: 40%; 
-  animation-delay: 1s;
-}
-.bubble-5 .bubble-animation-y{
-  animation-duration: 5s;
-  animation-delay: 0;
-}
-
-.bubble-6 {
-  left: 45%;
-  animation-delay: 2s;
-}
-.bubble-6 .bubble-animation-y{
-  animation-duration: 7s;
-  animation-delay: 3.5s;
-}
-
-.bubble-7 {
-  right: 15%;
-  animation-delay: 1s;
-}
-.bubble-7 .bubble-animation-y{
-  animation-duration: 5.5s;
-  animation-delay: 3s;
-}
-
-.bubble-8 {
-  right: 5%;
-  animation-delay: 2s;
-}
-.bubble-8 .bubble-animation-y{
-  animation-duration: 7s;
-  animation-delay: 3s;
-}
-
-
-/* Static Circles */
-
-.bubble-static {
-  width: 500px;
-  height: 500px;
-  border-radius: 100%;
-  background-color: #378048;
-  position: absolute;
-}
-
-.bubble-9 {
-  top: -375px;
-  left: 14%;  
-}
-
-.bubble-10 {
-  bottom: -350px;
-  right: -50px;	
-}
-
-.bubble-container{
-  position: absolute;
-  bottom: -250px; 
-}
-
-.bubble-large, .bubble-small {
-  border-radius: 100%;  
-  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1), 
-  inset 0px 10px 30px 5px rgba(96, 147, 195, 1);
-}
-
-.bubble-large {
-  //border: 7px solid #055E8F;  
-  width: 231px;
-  height: 231px;
-}
-
-.bubble-small {
-  //border: 5px solid #055E8F;
-  width: 82px;
-  height: 82px;
-}
-
-.bubble-animation-x { 
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-  animation-name: bubbleXAnimFrames;
-  animation-timing-function: ease;
-  animation-direction: alternate;
-}
-
-.bubble-animation-y { 
-  animation-iteration-count: infinite;
-  animation-name: bubbleYAnimFrames;
-  animation-timing-function: linear;
-}
-
-
- @keyframes bubbleXAnimFrames {
-  0% {
-    transform: translateX(0);
-   }
-  100% {
-    transform: translateX(50px);
-   }
-}
-
- @keyframes bubbleYAnimFrames {
-  0% {
-    transform: translateY(0);
-   }
-  50% {
-    opacity: 85%;
-   }
-  100% {
-    transform: translateY(-100vh);
-    opacity: 0;
-   }
-}
