@@ -1,22 +1,8 @@
 @font-face {
   font-family: myFont;
-  src: url(kredit.ttf);
+  src: url(font.ttf);
 }
 
-@font-face {
-  font-family: myFont1;
-  src: url(kredit_front.ttf);
-}
-
-@font-face {
-  font-family: myFont2;
-  src: url(kredit_back.ttf);
-}
-
-@font-face {
-  font-family: myFont3;
-  src: url(kredit_shine.ttf);
-}
 
 *{
   padding: 0;
@@ -60,12 +46,11 @@ a{
   height: 6vh;
   width: 20vh;
   border-radius: 30px;
-  background-color: #363f9a;
   display: flex;
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  border: solid black;
+  border: solid white;
 }
 
 .save{
@@ -76,7 +61,7 @@ a{
   justify-content: center;
   align-items: center;
   color: white;
-    font-family: Arial;
+    font-family: myFont;
     font-size: 2vh;
 }
 
